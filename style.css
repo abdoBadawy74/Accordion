@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+.accordion {
+  width: 100%;
+  border: none;
+  outline: 0;
+  background: #eee;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+.accordion:hover {
+  transition: 0.3s;
+  background-color: #ccc;
+}
+.accordion::after {
+  content: "\002b";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #777;
+}
+.active::after{
+    content: "\2212";
+}
+.desc {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
